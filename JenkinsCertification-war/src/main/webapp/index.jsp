@@ -4,7 +4,7 @@
 <h2>Hello World!</h2>
 <h3>
 <%
-out.print("1 + 2 = " + App.add(1, 2));
+out.print("1 + 3 = " + App.add(1, 3));
 %>
 </h3>
 </body>

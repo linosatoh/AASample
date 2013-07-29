@@ -1,4 +1,4 @@
-<%@page import="jp.shiftinc.App" %>
+<%@page import="agile.academy.App" %>
 <html>
 <body>
 <h2>Hello World!</h2>

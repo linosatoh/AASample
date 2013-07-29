@@ -4,19 +4,19 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>jp.shiftinc</groupId>
-		<artifactId>JenkinsCertification</artifactId>
+		<groupId>agile.academy</groupId>
+		<artifactId>AASample</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>JenkinsCertification-war</artifactId>
+	<artifactId>AASample-war</artifactId>
 	<packaging>war</packaging>
-	<name>JenkinsCertification-war Maven Webapp</name>
+	<name>AASample-war Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 
 		<dependency>
-			<groupId>jp.shiftinc</groupId>
-			<artifactId>JenkinsCertification-jar</artifactId>
+			<groupId>agile.academy</groupId>
+			<artifactId>AASample-jar</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>runtime</scope>
 		</dependency>

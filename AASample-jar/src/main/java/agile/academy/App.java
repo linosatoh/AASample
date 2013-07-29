@@ -1,4 +1,4 @@
-package jp.shiftinc;
+package agile.academy;
 
 /**
  * Hello world!

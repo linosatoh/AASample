@@ -5,8 +5,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import agile.academy.App;
-
 public class AppTest {
 
 	@Test
@@ -15,17 +13,17 @@ public class AppTest {
 	}
 
 	@Test
-	public void testSub() {
+	public void testSubtract() {
 		assertThat(App.subtract(20, 3), is(17));
 	}
 
 	@Test
-	public void testMul() {
+	public void testMultiply() {
 		assertThat(App.multiply(3, 5), is(15));
 	}
 
 	@Test
-	public void testDiv() {
+	public void testDivide() {
 		assertThat(App.divide(16, 2), is(8));
 	}
 

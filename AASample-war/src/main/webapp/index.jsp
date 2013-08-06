@@ -18,9 +18,9 @@
 	<span>+</span>
 	<input type="text" name="augend" value="<%= augendStr == null ? "" : augendStr %>"/>
 	<span>=</span>
-	<label id="result"><% 
+	<label id="result"><%
 	if (addendStr != null	&& augendStr != null) {
-		out.print(App.subtract(Integer.valueOf(addendStr), Integer.valueOf(augendStr)));
+		out.print(App.subtract(Integer.valueOf(addendStr), Integer.valueOf(augendStr)).toString());
 	}
 	%></label>
 	</td></tr>

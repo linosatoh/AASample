@@ -8,17 +8,18 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class WebDriverFactory {
 
 	public static WebDriver createWebDriver(String browserName) {
-		switch (browserName) {
-		case "firefox":
+
+		if ("firefox".equals(browserName)) {
 			return new FirefoxDriver();
-		case "chrome":
+		} else if ("chrome".equals(browserName)) {
 			return new ChromeDriver();
-		case "htmlunit":
+		} else if ("htmlunit".equals(browserName)) {
 			return new HtmlUnitDriver();
-		default:
+		} else {
 			throw new IllegalArgumentException(String.format(
 					"Browser %s is not supported. Please set 'firefox', 'chrome', or 'htmlunit'", browserName));
 		}
+
 	}
 
 }

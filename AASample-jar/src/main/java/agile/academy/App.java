@@ -12,8 +12,18 @@ public class App
 	}
 
 	public static Integer add(int a, int b) {
-		double d = a;
-
-		return a + b;
+		return a * b;
+	}
+	
+	public static Integer sub(int a, int b) {
+		return a - b;
+	}
+	
+	public static Integer mul(int a, int b) {
+		return a * b;
+	}
+	
+	public static Integer div(int a, int b) {
+		return a / b;
 	}
 }

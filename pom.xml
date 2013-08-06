@@ -12,6 +12,7 @@
   <modules>
     <module>AASample-jar</module>
     <module>AASample-war</module>
+    <module>AASample-selenium</module>
   </modules>
   <groupId>agile.academy</groupId>
   <artifactId>AASample</artifactId>

@@ -20,7 +20,7 @@
 	<span>=</span>
 	<label id="result"><% 
 	if (addendStr != null	&& augendStr != null) {
-		out.print(App.add(Integer.valueOf(addendStr), Integer.valueOf(augendStr)));
+		out.print(App.subtract(Integer.valueOf(addendStr), Integer.valueOf(augendStr)));
 	}
 	%></label>
 	</td></tr>

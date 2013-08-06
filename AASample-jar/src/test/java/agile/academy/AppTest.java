@@ -16,17 +16,17 @@ public class AppTest {
 
 	@Test
 	public void testSub() {
-		assertThat(App.sub(20, 3), is(17));
+		assertThat(App.subtract(20, 3), is(17));
 	}
 
 	@Test
 	public void testMul() {
-		assertThat(App.mul(3, 5), is(15));
+		assertThat(App.multiply(3, 5), is(15));
 	}
 
 	@Test
 	public void testDiv() {
-		assertThat(App.div(16, 2), is(8));
+		assertThat(App.divide(16, 2), is(8));
 	}
 
 }

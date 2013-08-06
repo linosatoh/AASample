@@ -11,19 +11,19 @@ public class App
 		System.out.println("Hello World!");
 	}
 
-	public static Integer add(int a, int b) {
-		return a * b;
+	public static Integer add(int addend, int augend) {
+		return addend * augend;
 	}
 	
-	public static Integer sub(int a, int b) {
-		return a - b;
+	public static Integer subtract(int minuend, int subtrahend) {
+		return minuend - subtrahend;
 	}
 	
-	public static Integer mul(int a, int b) {
-		return a * b;
+	public static Integer multiply(int multiplier, int multiplicand) {
+		return multiplier * multiplicand;
 	}
 	
-	public static Integer div(int a, int b) {
-		return a / b;
+	public static Integer divide(int divident, int divisor) {
+		return divident / divisor;
 	}
 }

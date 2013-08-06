@@ -5,22 +5,22 @@
 </head>
 <body>
 <h2>Agile Academy Sample Application</h2>
-<%! String num1Str; %>
-<%! String num2Str; %>
+<%! String addendStr; %>
+<%! String augendStr; %>
 <%
-	num1Str = request.getParameter("text_num1");
-	num2Str = request.getParameter("text_num2");
+	addendStr = request.getParameter("addend");
+	augendStr = request.getParameter("augend");
 %>
 <form method="POST">
 <table id="calc_table">
 	<tr><td>
-	<input type="text" name="text_num1" value="<%= num1Str == null ? "" : num1Str %>"/>
+	<input type="text" name="addend" value="<%= addendStr == null ? "" : addendStr %>"/>
 	<span>+</span>
-	<input type="text" name="text_num2" value="<%= num2Str == null ? "" : num2Str %>"/>
+	<input type="text" name="augend" value="<%= augendStr == null ? "" : augendStr %>"/>
 	<span>=</span>
 	<label id="result"><% 
-	if (num1Str != null	&& num2Str != null) {
-		out.print(App.sub(Integer.valueOf(num1Str), Integer.valueOf(num2Str)));
+	if (addendStr != null	&& augendStr != null) {
+		out.print(App.subtract(Integer.valueOf(addendStr), Integer.valueOf(augendStr)));
 	}
 	%></label>
 	</td></tr>

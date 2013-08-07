@@ -30,7 +30,7 @@ public class AppIntegrationTest {
 	@Test
 	public void testAdd() {
 		driver.get(System.getProperty(KEY_BASE_URL));
-
+		
 		// 1つめの引数を入力
 		WebElement addend = driver.findElement(By.name("addend"));
 		addend.clear();

@@ -20,7 +20,6 @@
 	<modules>
 		<module>AASample-jar</module>
 		<module>AASample-war</module>
-		<module>AASample-selenium</module>
 	</modules>
 	<groupId>agile.academy</groupId>
 	<artifactId>AASample</artifactId>
@@ -33,6 +32,9 @@
 					<excludes>
 						<exclude>**/*IntegrationTest.java</exclude>
 					</excludes>
+        			<!-- skips surefire tests without skipping failsafe tests.
+                 		Property value seems to magically default to false -->
+        			<skipTests>${skip.surefire.tests}</skipTests>
 				</configuration>
 			</plugin>
 			<plugin>

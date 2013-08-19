@@ -12,7 +12,7 @@ public class App
 	}
 
 	public static int add(int addend, int augend) {
-		return addend + augend;
+		return addend * augend;
 	}
 
 	public static int subtract(int minuend, int subtrahend) {

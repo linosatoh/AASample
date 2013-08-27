@@ -12,6 +12,8 @@ public class App
 	}
 
 	public static int add(int addend, int augend) {
+    int temp = addend;
+
 		return addend * augend;
 	}
 

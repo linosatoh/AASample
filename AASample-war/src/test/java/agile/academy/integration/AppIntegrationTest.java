@@ -28,7 +28,7 @@ public class AppIntegrationTest {
 
 	// 10 + 20 = 30 になることを確認
 	@Test
-	public void testAdd() {
+	public void testAdd() throws Exception{
 		driver.get(System.getProperty(KEY_BASE_URL));
 		
 		// 1つめの引数を入力
@@ -40,11 +40,11 @@ public class AppIntegrationTest {
 		WebElement augend = driver.findElement(By.name("augend"));
 		augend.clear();
 		augend.sendKeys("20");
-
+		Thread.sleep(5000);
 		// 計算実行
 		WebElement submit = driver.findElement(By.id("button_calc"));
 		submit.click();
-
+		Thread.sleep(5000);
 		// 結果の検証
 		Assert.assertThat(driver.findElement(By.id("result")).getText(), is("30"));
 	}

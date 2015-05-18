@@ -5,8 +5,8 @@
 </head>
 <body>
 <h2>Agile Academy Sample Application</h2>
-<%! String addendStr; %>
-<%! String augendStr; %>
+<%! private String addendStr; %>
+<%! private String augendStr; %>
 <%
 	addendStr = request.getParameter("addend");
 	augendStr = request.getParameter("augend");
